@@ -11,9 +11,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+// Laddar upp information som skrivs in i formuläret till databasen.
+
 if (!($stmt = $conn->prepare("INSERT into namnin(namn) values (?)"))) {
     echo "Prepare failed: (" . $conn->errno . ") " . $conn->error;
 }
+
+// Filtrerar inputen.
 
 $filtered = filter_input(INPUT_POST, "namn", FILTER_SANITIZE_SPECIAL_CHARS);
 $filtered = trim($filtered);
