@@ -28,6 +28,7 @@
         die("Connection failed: " . $conn->connect_error);
         }
     
+        //Updaterar databasen varje gång man trycker på vote, och plussar på en etta i votes.
         if(isset($_GET["vote"])) {
 
         $filterId = filter_var($_GET["vote"], FILTER_VALIDATE_INT);
