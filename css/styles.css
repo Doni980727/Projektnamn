@@ -1,0 +1,29 @@
+p{
+    text-align: center;
+    font-size: 80px;
+        font-family: 'Montserrat', sans-serif;
+
+}
+
+header{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.container-fluid{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-image: url(../images/straws.png);
+}
+
+.ruta{
+    display: inline-block;
+    display: flex;
+}
+
+iframe{
+    margin: auto;
+    border-style: none;
+}
